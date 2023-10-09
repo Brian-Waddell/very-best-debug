@@ -13,5 +13,5 @@ Rails.application.routes.draw do
   get("/delete_venue/:the_id", { :controller => "venues", :action => "destroy" })
  
   
-  post("/insert_comment_record", { :controller => "comments", :action => "create" })
+  get("/insert_comment_record", { :controller => "comments", :action => "create" })
 end
