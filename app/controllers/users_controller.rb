@@ -4,7 +4,7 @@ class UsersController < ApplicationController
     matching_users = User.all
     @users = matching_users.order(:created_at)
     
-    @the_user = @users #.at(0)
+    
 
     render({ :template => "user_templates/all_users"})
   end
